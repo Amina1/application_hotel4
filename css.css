@@ -1,0 +1,30 @@
+
+
+div.cadran
+{
+	
+	
+	left: 50px;
+	width: 180px;
+	height: 90px;
+	border-top-width: 4px;
+	border-top-style: solid;
+	border-top-color: #d0b6d0;
+	border-right-width: 1px;
+	border-right-color: #d0b6d0;
+	background-image: url("menu.jpg");
+	background-repeat: repeat-y;
+	
+}
+
+hr
+{
+	border-color: #eaddeb;
+	border-width: 1px;
+	border-style: solid;
+}
+
+div.cadran fieldset
+{
+	border-width: 0px;
+}

@@ -1,0 +1,27 @@
+<link rel="stylesheet" type="text/css" href="st.css" media="screen" />
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+
+<?php
+$id_article=$_GET['id_article'];
+$connection=mysql_connect('localhost','root','');
+$db=mysql_select_db('journale',$connection);
+$reqf="select * from journale.article where id_article='".$id_article."'";
+$resultf=mysql_query($reqf) or die ("impossible4").mysql_error();
+$row=mysql_fetch_array($resultf);
+echo "<img src=image.php?id_article=".$row['id_article']." width=\"100%\" hiegth=\"90%\" class=\"bordered\"/>";
+
+?></a></p><h3><a href="#"><?php 
+$reqq="select * from journale.article where id_article='".$id_article."'";
+$resultat=mysql_query($reqq)or die("impossible").mysql_error();
+while($data=mysql_fetch_array($resultat)){
+?>
+<p class="large"> 
+<?php
+echo $data['titre_article'];?> </a></h3><p><?php
+echo $data['résumé_article']; ?></p><?php 
+}
+?>
+<a href="alaune.php?id_article=<?php echo $id_article;?>" class="more">Lire tout &#187;</a>
+
+
+Passez une nuit en BB pour 2, à 999 DH au lieu de 2500 DH, à l'Atlas Essaouira and Spa !
